@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "QueryMsg",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": [
+        "get_state"
+      ],
+      "properties": {
+        "get_state": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "required": [
+        "get_box_list_info"
+      ],
+      "properties": {
+        "get_box_list_info": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": false
+    }
+  ]
+}
